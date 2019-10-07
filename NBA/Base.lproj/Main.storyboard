@@ -67,7 +67,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Players" id="vuj-ip-ZFn">
-                        <barButtonItem key="leftBarButtonItem" title="Fetch Players" id="0vW-Im-5va"/>
+                        <barButtonItem key="leftBarButtonItem" title="Fetch Players" id="0vW-Im-5va">
+                            <connections>
+                                <action selector="fetchPlayersTapped:" destination="nje-m7-2uG" id="C1z-NU-a3c"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzX-qo-eQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

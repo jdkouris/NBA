@@ -14,8 +14,6 @@ class PlayersTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     // MARK: - Table view data source
@@ -30,6 +28,13 @@ class PlayersTableViewController: UITableViewController {
         cell.player = apiController.players[indexPath.row]
 
         return cell
+    }
+    @IBAction func fetchPlayersTapped(_ sender: UIBarButtonItem) {
+        apiController.getAllPlayers { (_) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     /*
