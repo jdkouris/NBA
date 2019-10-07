@@ -9,6 +9,8 @@
 import UIKit
 
 class PlayersTableViewController: UITableViewController {
+    
+    let apiController = APIController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +21,13 @@ class PlayersTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return apiController.players.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath) as? PlayerTableViewCell else { return UITableViewCell() }
 
-        // Configure the cell...
+        cell.player = apiController.players[indexPath.row]
 
         return cell
     }

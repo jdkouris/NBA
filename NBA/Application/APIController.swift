@@ -31,7 +31,9 @@ class APIController {
         "x-rapidapi-key": "28e12433femsh7d97d7c2469e068p199c9djsn14672ad2ac4d"
     ]
     
-    func getAllPlayers(completion: @escaping (Result<[Player], NetworkingError>) -> Void) {
+    var players: [Player] = []
+    
+    func getAllPlayers(completion: @escaping (Result<PlayerSearch, NetworkingError>) -> Void) {
         
         var request = URLRequest(url: baseURL)
         request.httpMethod = HTTPMethod.get.rawValue
@@ -55,7 +57,8 @@ class APIController {
             }
             
             do {
-                let players = try JSONDecoder().decode([Player].self, from: data)
+                let players = try JSONDecoder().decode(PlayerSearch.self, from: data)
+                self.players = players.data
                 completion(.success(players))
             } catch {
                 NSLog("Error decoding players: \(error)")

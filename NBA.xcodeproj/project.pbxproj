@@ -15,6 +15,7 @@
 		CC3A40C6234BD73600C08CAC /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40C5234BD73600C08CAC /* PlayersTableViewController.swift */; };
 		CC3A40C9234BD77E00C08CAC /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40C8234BD77E00C08CAC /* APIController.swift */; };
 		CC3A40CD234BD82900C08CAC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CC234BD82900C08CAC /* Player.swift */; };
+		CC3A40D0234BDDD500C08CAC /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC3A40C5234BD73600C08CAC /* PlayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
 		CC3A40C8234BD77E00C08CAC /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		CC3A40CC234BD82900C08CAC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				CC3A40C7234BD77100C08CAC /* Application */,
 				CC3A40C4234BD71900C08CAC /* Models */,
+				CC3A40CE234BDDB900C08CAC /* Views */,
 				CC3A40C3234BD71200C08CAC /* Model Controllers */,
 				CC3A40C2234BD70B00C08CAC /* View Controllers */,
 				CC3A40AE234BD6C300C08CAC /* AppDelegate.swift */,
@@ -103,6 +106,14 @@
 				CC3A40C8234BD77E00C08CAC /* APIController.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		CC3A40CE234BDDB900C08CAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3A40D0234BDDD500C08CAC /* PlayerTableViewCell.swift in Sources */,
 				CC3A40C9234BD77E00C08CAC /* APIController.swift in Sources */,
 				CC3A40AF234BD6C300C08CAC /* AppDelegate.swift in Sources */,
 				CC3A40B1234BD6C300C08CAC /* SceneDelegate.swift in Sources */,
