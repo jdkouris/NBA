@@ -16,6 +16,7 @@ class PlayersTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
     }
 
     // MARK: - Table view data source
@@ -42,4 +43,16 @@ class PlayersTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension PlayersTableViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let playerSearch = searchBar.text else { return }
+        apiController.searchFor(player: playerSearch) { (result) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
 }
