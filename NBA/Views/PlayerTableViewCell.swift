@@ -14,17 +14,17 @@ class PlayerTableViewCell: UITableViewCell {
     @IBOutlet var firstNameLabel: UILabel!
     @IBOutlet var positionLabel: UILabel!
     
-    var player: Player? 
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var player: Player? {
+        didSet {
+            updateViews()
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func updateViews() {
+        guard let player = player else { return }
+        lastNameLabel.text = player.lastName
+        firstNameLabel.text = player.firstName
+        positionLabel.text = player.position
     }
 
 }
