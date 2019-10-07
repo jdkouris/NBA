@@ -38,7 +38,9 @@
                             <outlet property="delegate" destination="nje-m7-2uG" id="f5R-tf-dR6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="vuj-ip-ZFn"/>
+                    <navigationItem key="navigationItem" title="Players" id="vuj-ip-ZFn">
+                        <barButtonItem key="leftBarButtonItem" title="Fetch Players" id="0vW-Im-5va"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzX-qo-eQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
