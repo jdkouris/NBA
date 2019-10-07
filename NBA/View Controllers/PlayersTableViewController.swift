@@ -10,6 +10,8 @@ import UIKit
 
 class PlayersTableViewController: UITableViewController {
     
+    @IBOutlet var searchBar: UISearchBar!
+    
     let apiController = APIController()
 
     override func viewDidLoad() {
@@ -28,13 +30,6 @@ class PlayersTableViewController: UITableViewController {
         cell.player = apiController.players[indexPath.row]
 
         return cell
-    }
-    @IBAction func fetchPlayersTapped(_ sender: UIBarButtonItem) {
-        apiController.getAllPlayers { (_) in
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
     }
     
     /*

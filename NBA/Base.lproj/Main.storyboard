@@ -14,9 +14,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="2Wf-cS-70O">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="70" id="JOg-Cq-5TT" customClass="PlayerTableViewCell" customModule="NBA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JOg-Cq-5TT" id="8I2-37-ijk">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -66,13 +71,10 @@
                             <outlet property="delegate" destination="nje-m7-2uG" id="f5R-tf-dR6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="vuj-ip-ZFn">
-                        <barButtonItem key="leftBarButtonItem" title="Fetch Players" id="0vW-Im-5va">
-                            <connections>
-                                <action selector="fetchPlayersTapped:" destination="nje-m7-2uG" id="C1z-NU-a3c"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Players" id="vuj-ip-ZFn"/>
+                    <connections>
+                        <outlet property="searchBar" destination="2Wf-cS-70O" id="pvb-pI-zuU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzX-qo-eQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
