@@ -26,10 +26,8 @@ enum NetworkingError: Error {
 class APIController {
     
     private let baseURL = URL(string: "https://free-nba.p.rapidapi.com/players")!
-    let headers = [
-        "x-rapidapi-host": "free-nba.p.rapidapi.com",
-        "x-rapidapi-key": "28e12433femsh7d97d7c2469e068p199c9djsn14672ad2ac4d"
-    ]
+    
+    let headers = Headers.shared.headers
     
     var players: [Player] = []
     

@@ -16,6 +16,7 @@
 		CC3A40C9234BD77E00C08CAC /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40C8234BD77E00C08CAC /* APIController.swift */; };
 		CC3A40CD234BD82900C08CAC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CC234BD82900C08CAC /* Player.swift */; };
 		CC3A40D0234BDDD500C08CAC /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */; };
+		CC3A40D2234BE0DF00C08CAC /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40D1234BE0DF00C08CAC /* Headers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CC3A40C8234BD77E00C08CAC /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		CC3A40CC234BD82900C08CAC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		CC3A40D1234BE0DF00C08CAC /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3A40C8234BD77E00C08CAC /* APIController.swift */,
+				CC3A40D1234BE0DF00C08CAC /* Headers.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				CC3A40B1234BD6C300C08CAC /* SceneDelegate.swift in Sources */,
 				CC3A40CD234BD82900C08CAC /* Player.swift in Sources */,
 				CC3A40C6234BD73600C08CAC /* PlayersTableViewController.swift in Sources */,
+				CC3A40D2234BE0DF00C08CAC /* Headers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
