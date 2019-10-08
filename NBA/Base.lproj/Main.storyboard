@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Players-->
+        <!--NBA Player Search-->
         <scene sceneID="Qee-je-sr3">
             <objects>
                 <tableViewController id="nje-m7-2uG" customClass="PlayersTableViewController" customModule="NBA" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,7 @@
                             <outlet property="delegate" destination="nje-m7-2uG" id="f5R-tf-dR6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="vuj-ip-ZFn"/>
+                    <navigationItem key="navigationItem" title="NBA Player Search" id="vuj-ip-ZFn"/>
                     <connections>
                         <outlet property="searchBar" destination="2Wf-cS-70O" id="pvb-pI-zuU"/>
                     </connections>
@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-CF-Shy">
-                                <rect key="frame" x="20" y="108" width="374" height="184"/>
+                                <rect key="frame" x="20" y="160" width="374" height="139"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQv-re-Wtc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
@@ -107,13 +107,30 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzR-NV-UuO">
                                         <rect key="frame" x="0.0" y="114" width="374" height="25"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-FB-Jnf">
+                                <rect key="frame" x="20" y="359" width="374" height="132.5"/>
+                                <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvL-wB-uiH">
-                                        <rect key="frame" x="0.0" y="159" width="374" height="25"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7p-oE-AEq">
+                                        <rect key="frame" x="0.0" y="54.5" width="374" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Division" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFQ-sD-RYt">
+                                        <rect key="frame" x="0.0" y="107.5" width="374" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -122,14 +139,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Hu2-FB-Jnf" firstAttribute="top" secondItem="I1u-CF-Shy" secondAttribute="bottom" constant="60" id="EBo-dR-h7a"/>
                             <constraint firstItem="I1u-CF-Shy" firstAttribute="leading" secondItem="2ew-ls-SXc" secondAttribute="leading" constant="20" id="Foh-bO-LOf"/>
                             <constraint firstItem="I1u-CF-Shy" firstAttribute="top" secondItem="2ew-ls-SXc" secondAttribute="top" constant="20" id="HVh-wV-oeZ"/>
+                            <constraint firstItem="Hu2-FB-Jnf" firstAttribute="leading" secondItem="2ew-ls-SXc" secondAttribute="leading" constant="20" id="MRL-Ec-GDR"/>
                             <constraint firstItem="2ew-ls-SXc" firstAttribute="trailing" secondItem="I1u-CF-Shy" secondAttribute="trailing" constant="20" id="XHd-99-JPY"/>
+                            <constraint firstItem="2ew-ls-SXc" firstAttribute="trailing" secondItem="Hu2-FB-Jnf" secondAttribute="trailing" constant="20" id="vJS-gb-44o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2ew-ls-SXc"/>
                     </view>
                     <navigationItem key="navigationItem" id="rU1-kT-1bL"/>
                     <connections>
+                        <outlet property="conferenceLabel" destination="E7p-oE-AEq" id="W4a-My-1XG"/>
+                        <outlet property="divisionLabel" destination="MFQ-sD-RYt" id="JfF-1E-9SL"/>
                         <outlet property="firstNameLabel" destination="ZQv-re-Wtc" id="XTO-zS-8oJ"/>
                         <outlet property="lastNameLabel" destination="Bzv-Eh-LbZ" id="Q17-89-kA2"/>
                         <outlet property="positionLabel" destination="ZzR-NV-UuO" id="2BS-uR-ZnX"/>
@@ -144,8 +166,8 @@
         <scene sceneID="bw6-3O-zoF">
             <objects>
                 <navigationController id="msq-6e-jg4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Jt-mN-flG">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4Jt-mN-flG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -14,13 +14,15 @@ class PlayerDetailViewController: UIViewController {
     @IBOutlet var firstNameLabel: UILabel!
     @IBOutlet var positionLabel: UILabel!
     @IBOutlet var teamNameLabel: UILabel!
+    @IBOutlet var conferenceLabel: UILabel!
+    @IBOutlet var divisionLabel: UILabel!
     
     var apiController: APIController?
     var player: Player?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.largeTitleDisplayMode = .never
         updateViews()
     }
     
