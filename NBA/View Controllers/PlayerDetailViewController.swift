@@ -10,8 +10,7 @@ import UIKit
 
 class PlayerDetailViewController: UIViewController {
     
-    @IBOutlet var lastNameLabel: UILabel!
-    @IBOutlet var firstNameLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var positionLabel: UILabel!
     @IBOutlet var teamNameLabel: UILabel!
     @IBOutlet var conferenceLabel: UILabel!
@@ -28,14 +27,16 @@ class PlayerDetailViewController: UIViewController {
     
     func updateViews() {
         guard let player = player else { return }
-        lastNameLabel.text = player.lastName
-        firstNameLabel.text = player.firstName
+        
+        nameLabel.text = "\(player.firstName) \(player.lastName)"
         if player.position == "" {
             positionLabel.text = "Unknown position"
         } else {
             positionLabel.text = "Position: \(player.position)"
         }
-        
+        teamNameLabel.text = player.team.fullName
+        conferenceLabel.text = "Conference: \(player.team.conference)"
+        divisionLabel.text = "Division: \(player.team.division)"
     }
     
 }

@@ -15,7 +15,7 @@
 		CC3A40BB234BD6C700C08CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3A40B9234BD6C700C08CAC /* LaunchScreen.storyboard */; };
 		CC3A40C6234BD73600C08CAC /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40C5234BD73600C08CAC /* PlayersTableViewController.swift */; };
 		CC3A40C9234BD77E00C08CAC /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40C8234BD77E00C08CAC /* APIController.swift */; };
-		CC3A40CD234BD82900C08CAC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CC234BD82900C08CAC /* Player.swift */; };
+		CC3A40CD234BD82900C08CAC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CC234BD82900C08CAC /* Models.swift */; };
 		CC3A40D0234BDDD500C08CAC /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */; };
 		CC3A40D2234BE0DF00C08CAC /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40D1234BE0DF00C08CAC /* Headers.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		CC3A40BC234BD6C700C08CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC3A40C5234BD73600C08CAC /* PlayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
 		CC3A40C8234BD77E00C08CAC /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		CC3A40CC234BD82900C08CAC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CC3A40CC234BD82900C08CAC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CC3A40CF234BDDD500C08CAC /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		CC3A40D1234BE0DF00C08CAC /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +100,7 @@
 		CC3A40C4234BD71900C08CAC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CC3A40CC234BD82900C08CAC /* Player.swift */,
+				CC3A40CC234BD82900C08CAC /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 				CC3A40AF234BD6C300C08CAC /* AppDelegate.swift in Sources */,
 				CC3A40B1234BD6C300C08CAC /* SceneDelegate.swift in Sources */,
 				CC27E967234CF04300C31F7D /* PlayerDetailViewController.swift in Sources */,
-				CC3A40CD234BD82900C08CAC /* Player.swift in Sources */,
+				CC3A40CD234BD82900C08CAC /* Models.swift in Sources */,
 				CC3A40C6234BD73600C08CAC /* PlayersTableViewController.swift in Sources */,
 				CC3A40D2234BE0DF00C08CAC /* Headers.swift in Sources */,
 			);
