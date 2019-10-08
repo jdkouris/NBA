@@ -10,10 +10,13 @@ import UIKit
 
 class PlayersTableViewController: UITableViewController {
     
+    @IBOutlet var searchBar: UISearchBar!
+    
     let apiController = APIController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
     }
 
     // MARK: - Table view data source
@@ -29,22 +32,28 @@ class PlayersTableViewController: UITableViewController {
 
         return cell
     }
-    @IBAction func fetchPlayersTapped(_ sender: UIBarButtonItem) {
-        apiController.getAllPlayers { (_) in
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowPlayerDetail" {
+            guard let destinationVC = segue.destination as? PlayerDetailViewController,
+                let indexPath = tableView.indexPathForSelectedRow else { return }
+            destinationVC.apiController = apiController
+            destinationVC.player = apiController.players[indexPath.row]
+        }
+    }
+
+}
+
+extension PlayersTableViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let playerSearch = searchBar.text else { return }
+        apiController.searchFor(player: playerSearch) { (result) in
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
