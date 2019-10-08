@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC27E967234CF04300C31F7D /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC27E966234CF04300C31F7D /* PlayerDetailViewController.swift */; };
 		CC3A40AF234BD6C300C08CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40AE234BD6C300C08CAC /* AppDelegate.swift */; };
 		CC3A40B1234BD6C300C08CAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A40B0234BD6C300C08CAC /* SceneDelegate.swift */; };
 		CC3A40B6234BD6C300C08CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3A40B4234BD6C300C08CAC /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC27E966234CF04300C31F7D /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		CC3A40AB234BD6C300C08CAC /* NBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3A40AE234BD6C300C08CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC3A40B0234BD6C300C08CAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3A40C5234BD73600C08CAC /* PlayersTableViewController.swift */,
+				CC27E966234CF04300C31F7D /* PlayerDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				CC3A40C9234BD77E00C08CAC /* APIController.swift in Sources */,
 				CC3A40AF234BD6C300C08CAC /* AppDelegate.swift in Sources */,
 				CC3A40B1234BD6C300C08CAC /* SceneDelegate.swift in Sources */,
+				CC27E967234CF04300C31F7D /* PlayerDetailViewController.swift in Sources */,
 				CC3A40CD234BD82900C08CAC /* Player.swift in Sources */,
 				CC3A40C6234BD73600C08CAC /* PlayersTableViewController.swift in Sources */,
 				CC3A40D2234BE0DF00C08CAC /* Headers.swift in Sources */,
